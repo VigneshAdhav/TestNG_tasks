@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="22" passed="18" failed="3" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-11T22:39:19 IST" name="Suite" finished-at="2023-10-11T22:39:19 IST" duration-ms="98">
+    <groups>
+      <group name="special">
+        <method signature="CalculatorTest.testSpecialCase()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" name="testSpecialCase" class="com.testng.CalculatorTest"/>
+      </group> <!-- special -->
+      <group name="math">
+        <method signature="CalculatorTest.testAddition()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" name="testAddition" class="com.testng.CalculatorTest"/>
+        <method signature="CalculatorTest.testDivideByZero()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" name="testDivideByZero" class="com.testng.CalculatorTest"/>
+        <method signature="CalculatorTest.testDivision(int,int,int)[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" name="testDivision" class="com.testng.CalculatorTest"/>
+        <method signature="CalculatorTest.testExpectedException()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" name="testExpectedException" class="com.testng.CalculatorTest"/>
+        <method signature="CalculatorTest.testMultiplication()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" name="testMultiplication" class="com.testng.CalculatorTest"/>
+        <method signature="CalculatorTest.testSubtraction()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" name="testSubtraction" class="com.testng.CalculatorTest"/>
+      </group> <!-- math -->
+    </groups>
+    <test started-at="2023-10-11T22:39:19 IST" name="Test" finished-at="2023-10-11T22:39:19 IST" duration-ms="98">
+      <class name="com.testng.CalculatorTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="setUp" finished-at="2023-10-11T22:39:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddition()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="testAddition" finished-at="2023-10-11T22:39:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddition -->
+        <test-method signature="testExpectedException()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="testExpectedException" finished-at="2023-10-11T22:39:19 IST" duration-ms="3" status="PASS">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[Cannot divide by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: Cannot divide by zero
+at com.testng.Calculator.divide(Calculator.java:18)
+at com.testng.CalculatorTest.testExpectedException(CalculatorTest.java:93)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExpectedException -->
+        <test-method signature="testDivideByZero()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="testDivideByZero" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivideByZero -->
+        <test-method signature="testAnotherParameterized(int,int,int)[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="testAnotherParameterized" finished-at="2023-10-11T22:39:19 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAnotherParameterized -->
+        <test-method signature="testDivision(int,int,int)[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="testDivision" data-provider="divisionData" finished-at="2023-10-11T22:39:19 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivision -->
+        <test-method signature="testSpecialCase()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="testSpecialCase" finished-at="2023-10-11T22:39:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSpecialCase -->
+        <test-method signature="testMultiplication()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="testMultiplication" finished-at="2023-10-11T22:39:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplication -->
+        <test-method signature="testSubtraction()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="testSubtraction" finished-at="2023-10-11T22:39:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtraction -->
+        <test-method signature="testParameterized(int,int,int)[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="testParameterized" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'param1' is required by @Test on method testParameterized but has not been marked @Optional or defined
+in C:\Users\Vigneswaran_Eswaran\eclipse-workspace\EpamTestNGTasks\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'param1' is required by @Test on method testParameterized but has not been marked @Optional or defined
+in C:\Users\Vigneswaran_Eswaran\eclipse-workspace\EpamTestNGTasks\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParameterized -->
+        <test-method signature="testDivision(int,int,int)[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="testDivision" data-provider="divisionData" finished-at="2023-10-11T22:39:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivision -->
+        <test-method signature="testDivision(int,int,int)[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="testDivision" data-provider="divisionData" finished-at="2023-10-11T22:39:19 IST" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[Cannot divide by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: Cannot divide by zero
+at com.testng.Calculator.divide(Calculator.java:18)
+at com.testng.CalculatorTest.testDivision(CalculatorTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivision -->
+        <test-method signature="testDependentCase()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="testDependentCase" depends-on-groups="math" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CalculatorTest.testDependentCase()[pri:0, instance:com.testng.CalculatorTest@1ed6388a] depends on not successfully finished methods in group "math"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CalculatorTest.testDependentCase()[pri:0, instance:com.testng.CalculatorTest@1ed6388a] depends on not successfully finished methods in group "math"
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDependentCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.CalculatorTest@1ed6388a]" started-at="2023-10-11T22:39:19 IST" name="tearDown" finished-at="2023-10-11T22:39:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testng.CalculatorTest -->
+      <class name="com.testng.BasicTestNGTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="setUp" finished-at="2023-10-11T22:39:19 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="setUp" finished-at="2023-10-11T22:39:19 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="setUp" finished-at="2023-10-11T22:39:19 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="setUp" finished-at="2023-10-11T22:39:19 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="setUp" finished-at="2023-10-11T22:39:19 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGreaterThan()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="testGreaterThan" finished-at="2023-10-11T22:39:19 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGreaterThan -->
+        <test-method signature="testEquality()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="testEquality" finished-at="2023-10-11T22:39:19 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEquality -->
+        <test-method signature="testDivision()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="testDivision" finished-at="2023-10-11T22:39:19 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivision -->
+        <test-method signature="testAddition()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="testAddition" finished-at="2023-10-11T22:39:19 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddition -->
+        <test-method signature="testFail()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="testFail" finished-at="2023-10-11T22:39:19 IST" duration-ms="11" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[This test intentionally fails.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: This test intentionally fails.
+at org.testng.Assert.fail(Assert.java:111)
+at com.testng.BasicTestNGTest.testFail(BasicTestNGTest.java:74)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="tearDown" finished-at="2023-10-11T22:39:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="tearDown" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="tearDown" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testMultiplication()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="testMultiplication" finished-at="2023-10-11T22:39:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplication -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="setUp" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="setUp" finished-at="2023-10-11T22:39:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="tearDown" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testLessThan()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="testLessThan" finished-at="2023-10-11T22:39:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLessThan -->
+        <test-method signature="testNotNull()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="testNotNull" finished-at="2023-10-11T22:39:19 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNotNull -->
+        <test-method signature="testSubtraction()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="testSubtraction" finished-at="2023-10-11T22:39:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtraction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="tearDown" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="setUp" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="setUp" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="setUp" finished-at="2023-10-11T22:39:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNull()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="testNull" finished-at="2023-10-11T22:39:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNull -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="tearDown" finished-at="2023-10-11T22:39:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="tearDown" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="tearDown" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="tearDown" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.BasicTestNGTest@f0da945]" started-at="2023-10-11T22:39:19 IST" name="tearDown" finished-at="2023-10-11T22:39:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testng.BasicTestNGTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">18</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">3</td><td class="num">98</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testng.BasicTestNGTest</td><td><a href="#m0">testFail</a></td><td rowspan="1">1697044159565</td><td rowspan="1">11</td></tr><tr class="failedodd"><td rowspan="2">com.testng.CalculatorTest</td><td><a href="#m1">testDivision</a></td><td rowspan="1">1697044159603</td><td rowspan="1">1</td></tr><tr class="failedodd"><td><a href="#m2">testParameterized</a></td><td rowspan="1">1697044159600</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.testng.CalculatorTest</td><td><a href="#m3">testDependentCase</a></td><td rowspan="1">1697044159609</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">com.testng.BasicTestNGTest</td><td><a href="#m4">testAddition</a></td><td rowspan="1">1697044159565</td><td rowspan="1">10</td></tr><tr class="passedeven"><td><a href="#m5">testDivision</a></td><td rowspan="1">1697044159565</td><td rowspan="1">10</td></tr><tr class="passedeven"><td><a href="#m6">testEquality</a></td><td rowspan="1">1697044159565</td><td rowspan="1">10</td></tr><tr class="passedeven"><td><a href="#m7">testGreaterThan</a></td><td rowspan="1">1697044159565</td><td rowspan="1">10</td></tr><tr class="passedeven"><td><a href="#m8">testLessThan</a></td><td rowspan="1">1697044159581</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m9">testMultiplication</a></td><td rowspan="1">1697044159580</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m10">testNotNull</a></td><td rowspan="1">1697044159581</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m11">testNull</a></td><td rowspan="1">1697044159582</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m12">testSubtraction</a></td><td rowspan="1">1697044159581</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="9">com.testng.CalculatorTest</td><td><a href="#m13">testAddition</a></td><td rowspan="1">1697044159587</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m14">testAnotherParameterized</a></td><td rowspan="1">1697044159593</td><td rowspan="1">7</td></tr><tr class="passedodd"><td><a href="#m15">testDivideByZero</a></td><td rowspan="1">1697044159588</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m16">testDivision</a></td><td rowspan="2">1697044159593</td><td rowspan="2">7</td></tr><tr class="passedodd"><td><a href="#m17">testDivision</a></td></tr><tr class="passedodd"><td><a href="#m18">testExpectedException</a></td><td rowspan="1">1697044159588</td><td rowspan="1">3</td></tr><tr class="passedodd"><td><a href="#m19">testMultiplication</a></td><td rowspan="1">1697044159595</td><td rowspan="1">2</td></tr><tr class="passedodd"><td><a href="#m20">testSpecialCase</a></td><td rowspan="1">1697044159595</td><td rowspan="1">2</td></tr><tr class="passedodd"><td><a href="#m21">testSubtraction</a></td><td rowspan="1">1697044159598</td><td rowspan="1">1</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.testng.BasicTestNGTest#testFail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: This test intentionally fails.
+	at com.testng.BasicTestNGTest.testFail(BasicTestNGTest.java:74)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 11 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.testng.CalculatorTest#testDivision</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>8</td><td>0</td><td>0</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.ArithmeticException: Cannot divide by zero
+	at com.testng.Calculator.divide(Calculator.java:18)
+	at com.testng.CalculatorTest.testDivision(CalculatorTest.java:43)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.testng.CalculatorTest#testParameterized</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;param1&apos; is required by @Test on method testParameterized but has not been marked @Optional or defined
+in C:\Users\Vigneswaran_Eswaran\eclipse-workspace\EpamTestNGTasks\testng.xml
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 11 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.testng.CalculatorTest#testDependentCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method CalculatorTest.testDependentCase()[pri:0, instance:com.testng.CalculatorTest@1ed6388a] depends on not successfully finished methods in group &quot;math&quot;
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 3 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.testng.BasicTestNGTest#testAddition</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.testng.BasicTestNGTest#testDivision</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.testng.BasicTestNGTest#testEquality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.testng.BasicTestNGTest#testGreaterThan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.testng.BasicTestNGTest#testLessThan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.testng.BasicTestNGTest#testMultiplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.testng.BasicTestNGTest#testNotNull</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.testng.BasicTestNGTest#testNull</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.testng.BasicTestNGTest#testSubtraction</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.testng.CalculatorTest#testAddition</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.testng.CalculatorTest#testAnotherParameterized</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>1</td><td>2</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.testng.CalculatorTest#testDivideByZero</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.testng.CalculatorTest#testDivision</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>10</td><td>2</td><td>5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.testng.CalculatorTest#testDivision</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>12</td><td>4</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.testng.CalculatorTest#testExpectedException</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: Cannot divide by zero
+	at com.testng.Calculator.divide(Calculator.java:18)
+	at com.testng.CalculatorTest.testExpectedException(CalculatorTest.java:93)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.testng.CalculatorTest#testMultiplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.testng.CalculatorTest#testSpecialCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.testng.CalculatorTest#testSubtraction</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
